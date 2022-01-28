@@ -1,14 +1,10 @@
-import { Button, Flex, Box, Grid } from "@chakra-ui/react";
+import { Button, Flex, Grid, useBreakpointValue } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { Logo } from "./logo";
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import Link from "next/link";
 
-interface HeaderProps {
-  shouldMatchExactHref?: boolean;
-}
-
-export function Header({ shouldMatchExactHref = false }: HeaderProps) {
+export function Header() {
   const { asPath } = useRouter();
   let isActive;
   

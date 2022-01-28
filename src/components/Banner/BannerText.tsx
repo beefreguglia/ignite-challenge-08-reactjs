@@ -6,7 +6,7 @@ export function BannerText() {
       <Heading
         color="gray.100"
         fontWeight="medium"
-        fontSize="4xl"
+        fontSize={["2xl","3xl","4xl"]}
         mb="1"
       >
         5 Continentes,
@@ -14,15 +14,17 @@ export function BannerText() {
       <Heading
         color="gray.100"
         fontWeight="medium"
-        fontSize="4xl"
+        fontSize={["2xl","3xl","4xl"]}
         mb="5"
       >infinitas possibilidades.</Heading>
       <Text
         color="gray.200"
         fontWeight="normal"
-        fontSize="lg"
+        fontSize={["md","lg"]}
         maxW="470px"
-      >Chegou a hora de tirar do papel a viagem que você sempre sonhou</Text>
+      >
+        Chegou a hora de tirar do papel a viagem que você sempre sonhou
+      </Text>
     </Box>
   );
 }
