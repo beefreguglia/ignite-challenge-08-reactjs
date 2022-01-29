@@ -3,7 +3,7 @@ import { Text } from "@chakra-ui/react";
 export function InformationText() {
   return(
     <Text
-      fontSize="2xl"
+      fontSize={["xl","2xl"]}
       color="gray.900"
       align="justify"
     >

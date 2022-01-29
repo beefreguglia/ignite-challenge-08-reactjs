@@ -5,10 +5,10 @@ import { InformationText } from "./InfomationText";
 export function ContinentInformation() {
   return(
     <Grid
-      templateColumns="1fr 1fr"
+      templateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]}
       gap="16"
       w="100%"
-      px="36"
+      px={["2","36"]}
     >
       <InformationText />
       <InformationNumbers />

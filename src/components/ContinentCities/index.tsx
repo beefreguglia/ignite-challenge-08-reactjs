@@ -3,31 +3,37 @@ import { CardCities } from "./CardCities";
 
 export function ContinentCities() {
   return(
-    <Box
-      mt="20"
-      mx="36"
-    >
+    <>
       <Heading
         fontWeight="medium"
-        fontSize="4xl"
+        fontSize={["2xl","4xl"]}
         mb="10"
+        mt="20"
+        ml={["4","36"]}
         color="gray.900"
       >
         Cidades +100
       </Heading>
-      <Grid
-        gridTemplateColumns="repeat(4, 1fr)"
-        gap="12"
+      <Box
+        mt="20"
+        mx={["10","36"]}
       >
-        <CardCities />
-        <CardCities />
-        <CardCities />
-        <CardCities />
-        <CardCities />
-        <CardCities />
-        <CardCities />
-        <CardCities />
-      </Grid>
-    </Box>
+        
+        <Grid
+          gridTemplateColumns={["1fr","1fr","repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]}
+          align="center"
+          gap="12"
+        >
+          <CardCities />
+          <CardCities />
+          <CardCities />
+          <CardCities />
+          <CardCities />
+          <CardCities />
+          <CardCities />
+          <CardCities />
+        </Grid>
+      </Box>
+    </>
   );
 }
