@@ -1,0 +1,40 @@
+{
+  "continent": [
+    {
+      "id": 1,
+      "name": "Europa",
+      "text": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "subtitle": "O continente mais antigo",
+      "image": "https://images.unsplash.com/photo-1604588839462-ce749d26fc2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx",
+      "all_contries": 50,
+      "languages": 60,
+      "cities_quantity": 27,
+      "cities": [
+        {
+          "city_name": "Londres",
+          "contry": "Reino Unido",
+          "avatar": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg",
+          "image": "https://images.unsplash.com/photo-1608383276937-7b4a72f0194b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Africa",
+      "text": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005[1]), representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico",
+      "subtitle": "O continente mais caótico",
+      "image": "https://www.segurospromo.com.br/blog/wp-content/uploads/2019/04/viagem-a-africa-750x360.jpg",
+      "all_contries": 54,
+      "languages": 3000,
+      "cities_quantity": 2,
+      "cities": [
+        {
+          "city_name": "Luanda",
+          "contry": "Angola",
+          "avatar": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg",
+          "image": "https://media.istockphoto.com/photos/luanda-bay-area-daylight-le-picture-id486541172?s=612x612"
+        }
+      ]
+    }
+  ]
+}

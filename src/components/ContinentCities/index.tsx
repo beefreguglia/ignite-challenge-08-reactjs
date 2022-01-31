@@ -1,7 +1,18 @@
-import { Box, Flex, Grid, Heading } from "@chakra-ui/react";
+import { Box, Grid, Heading } from "@chakra-ui/react";
 import { CardCities } from "./CardCities";
 
-export function ContinentCities() {
+interface City {
+  city_name: string;
+  contry: string;
+  avatar: string;
+  image: string;
+}
+
+interface ContinentCitiesProps {
+  cities: City[];
+}
+
+export function ContinentCities({ cities }: ContinentCitiesProps) {
   return(
     <>
       <Heading
@@ -24,14 +35,15 @@ export function ContinentCities() {
           align="center"
           gap="12"
         >
-          <CardCities />
-          <CardCities />
-          <CardCities />
-          <CardCities />
-          <CardCities />
-          <CardCities />
-          <CardCities />
-          <CardCities />
+          {cities.map(city => (
+            <CardCities 
+              key={city.city_name} 
+              city_name={city.city_name} 
+              contry={city.contry} 
+              avatar={city.avatar} 
+              image={city.image}
+            />
+          ))}
         </Grid>
       </Box>
     </>

@@ -6,11 +6,12 @@ import Link from "next/link";
 
 export function Header() {
   const { asPath } = useRouter();
-  let isActive;
-  
-  if(asPath === '/continent'){
+  let isActive: boolean;
+  console.log(asPath);
+  if(asPath.includes('/continent')){
     isActive = true;
   }
+  
   
   return(
     <Flex

@@ -1,6 +1,13 @@
-import { Avatar, Box, Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
-export function CardCities() {
+interface CardCitiesProps {
+  city_name: string;
+  contry: string;
+  avatar: string;
+  image: string;
+}
+
+export function CardCities({ city_name, contry, avatar, image }: CardCitiesProps) {
   return(
     <Box
       w="256px"
@@ -13,7 +20,7 @@ export function CardCities() {
         h="173"
         mb="5"
       >
-        <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' w="100%" h="100%" />
+        <Image src={image} alt='Dan Abramov' w="100%" h="100%" />
       </Flex>
       <Flex
         justify="space-between"
@@ -28,19 +35,21 @@ export function CardCities() {
             color="gray.900"
             fontSize="xl"
           >
-            Londres
+            {city_name}
           </Heading>
           <Text
             fontWeight="medium"
             color="gray.700"
-          >Reino Unido</Text>
+          >
+            {contry}
+          </Text>
         </Flex>
         <Flex
           align="center"
         >
           <Avatar 
             name="Flag"
-            src="https://bit.ly/ryan-florence"
+            src={avatar}
             size="sm"
           />
         </Flex>

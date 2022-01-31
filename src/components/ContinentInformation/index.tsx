@@ -2,7 +2,14 @@ import { Grid } from "@chakra-ui/react";
 import { InformationNumbers } from "./InfomationNumbers";
 import { InformationText } from "./InfomationText";
 
-export function ContinentInformation() {
+interface ContinentInformationProps {
+  contries: number;
+  languages: number;
+  cities: number;
+  text: string;
+}
+
+export function ContinentInformation({ contries, cities, languages, text }: ContinentInformationProps) {
   return(
     <Grid
       templateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]}
@@ -10,8 +17,8 @@ export function ContinentInformation() {
       w="100%"
       px={["2","36"]}
     >
-      <InformationText />
-      <InformationNumbers />
+      <InformationText text={text} />
+      <InformationNumbers contries={contries} languages={languages} cities={cities} />
     </Grid>
   );
 }
